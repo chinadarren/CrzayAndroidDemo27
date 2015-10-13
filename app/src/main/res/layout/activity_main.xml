@@ -1,0 +1,24 @@
+<!--通过拖动滑块来改变图片的透明度-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+<ImageView
+    android:layout_width="fill_parent"
+    android:layout_height="540px"
+    android:id="@+id/image"
+    android:src="@drawable/lijiang"
+    />
+    <!--定义一个拖动条，并改变它的滑块外观-->
+<SeekBar
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/seekbar"
+    android:max="255"
+    android:progress="255"
+    android:thumb="@drawable/ic_launcher"
+    />
+
+
+
+</LinearLayout>
